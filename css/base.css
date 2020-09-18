@@ -50,3 +50,7 @@ body {
 .btn:focus{
     box-shadow: none;
 }
+
+.bg-dark{
+    background-color: #343a400d !important;
+}
