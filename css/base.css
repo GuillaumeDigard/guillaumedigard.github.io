@@ -1,7 +1,7 @@
 html {
     font-size: 1.3rem;
 }
-@media (max-width: 1199px) { 
+/*@media (max-width: 1199px) { 
     html {
         font-size: 1.1rem;
     }
@@ -33,7 +33,7 @@ font-size: 0.3rem;
 @media (max-width: 230px) { 
     html {
     font-size: 0.2rem;
-} }
+} }*/
 
 body {
     background: url('../img/pexels-eberhard-grossgasteiger-572897.jpg') no-repeat center center fixed;
