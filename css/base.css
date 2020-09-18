@@ -42,3 +42,11 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+
+.mention{
+    font-size: 0.6rem;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
