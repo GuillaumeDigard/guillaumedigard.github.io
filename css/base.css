@@ -42,6 +42,10 @@ font-size: 0.23rem;
     .cv {
     font-size: 0.15rem;
 } }
+.row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
 .plt-em{
     padding-left: 2em!important;
     padding-top: 3em!important;
