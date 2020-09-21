@@ -57,7 +57,7 @@
                         </p>
                     </div>
                     <div class="row">
-                        <button type="button" class="btn btn-outline-light mx-auto mb-1" onclick="showCv()">
+                        <button type="button" id="boutonCV" class="btn btn-outline-light mx-auto mb-1" onclick="showCv()">
                             Voir mon CV
                         </button>
                     </div>
@@ -67,8 +67,8 @@
         <div class="row text-dark text-left cv" id="CV">
             <div class="container">
                 <div class="row mt-5 font-lato">
-                    <div class="col-5 bg-light pl-5 pt-5 pr-1">
-                        <div class="row pb-5">
+                    <div class="col-5 bg-light plt-em pr-1">
+                        <div class="row pb-em">
                             <p class="title col-12 ">
                                 Profil
                             </p>
@@ -81,7 +81,7 @@
                                 Pour continuer ma formation tout en acquérant des compétences professionnelles, je souhaite trouver un contrat en alternance d'une période d'un an ou de trois ans.
                             </p>
                         </div>
-                        <div class="row pb-5">
+                        <div class="row pb-em">
                             <p class="title col-12">
                                 Contact
                             </p>
@@ -92,7 +92,7 @@
                                 <div class="contact-info"><i class="fas fa-car fa-2x"></i><li class="contact">permis B, voiture personnelle</li></div>
                             </ul>
                         </div>
-                        <div class="row pb-5">
+                        <div class="row pb-em">
                             <p class="title col-12">
                                 Langages
                             </p>
@@ -109,7 +109,7 @@
                                 <li>Espagnol</li>
                             </ul>
                         </div>
-                        <div class="row pb-5">
+                        <div class="row pb-em">
                             <p class="title col-12">
                                 Formation personnelle
                             </p>
@@ -119,13 +119,13 @@
                                 <li>OpenClassrooms</li>
                             </ul>
                         </div>
-                        <div class="row pb-5">
+                        <div class="row pb-em">
                             <p class="title col-12">
                                 Loisirs
                             </p>
                             <p class="col">Saut à la perche, course, musculation</p>
                         </div>
-                        <div class="row pb-5">
+                        <div class="row pb-em">
                             <div class="col">
                                 <div class="row">
                                     <p class="title col-12">
@@ -145,10 +145,10 @@
         
                         </div>
                     </div>
-                    <div class="col-7 bg-creme pl-5 pt-5 pr-1">
+                    <div class="col-7 bg-creme plt-em pr-1">
                         <div class="row">
                             <div class="col">
-                                <div class="row pb-5">
+                                <div class="row pb-em">
                                     <p class="title col-12">
                                         Etudes
                                     </p>
@@ -175,7 +175,7 @@
                                         (Cherbourg-En-Cotentin)
                                     </p>
                                 </div>
-                                <div class="row pb-5">
+                                <div class="row pb-em">
                                     <p class="title col-12">
                                         Expériences informatiques
                                     </p>
@@ -223,7 +223,7 @@
                                         GIT, TRELLO.
                                     </p>
                                 </div>
-                                <div class="row pb-5">
+                                <div class="row pb-em">
                                     <p class="title col-12">
                                         Expériences en entreprise
                                     </p>
@@ -305,11 +305,14 @@
     <script>
         function showCv(){
             let elem = document.getElementById('CV');
+            let bouton = document.getElementById('boutonCV');
             let ht = window.getComputedStyle(elem, null).getPropertyValue("display");
             if(ht === "none"){
                 elem.style.display= "block";
+                bouton.innerHTML="Masquer mon CV"
             }else{
                 elem.style.display= "none";
+                bouton.innerHTML="Voir mon CV"
             }
         }
     </script>
