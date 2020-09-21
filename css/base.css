@@ -10,6 +10,46 @@ body {
     -o-background-size: cover;
 }
 
+@media (max-width: 1199px) { 
+    .cv {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 995px) { 
+    .cv {
+        font-size: 0.8rem;
+    } 
+}
+@media (max-width: 770px) { 
+    .cv {
+        font-size: 0.6rem;
+    } 
+}
+@media (max-width: 530px) { 
+    .cv {
+        font-size: 0.6rem;
+    } 
+}
+@media (max-width: 490px) { 
+    .cv {
+        font-size: 0.5rem;
+    } 
+}
+@media (max-width: 390px) { 
+    .cv {
+        font-size: 0.4rem;
+    } 
+}
+@media (max-width: 310px) { 
+    .cv {
+        font-size: 0.3rem;
+    } 
+}
+@media (max-width: 230px) { 
+    .cv {
+        font-size: 0.2rem;
+} }
+
 .mention{
     font-size: 0.6rem;
 }
@@ -20,4 +60,55 @@ body {
 
 .bg-dark{
     background-color: #343a400d !important;
+}
+
+#CV{
+    display:none;
+}
+
+li{
+    list-style: none;
+}
+
+.font-aleo{
+    font-family: 'Aleo', serif;
+}
+
+.font-lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.bg-creme{
+    background-color : #efefef;
+}
+
+.title{
+    color: #9f0011;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.contact{
+    position : absolute;
+    padding-left: 3em;
+    top:50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.contact-info{
+    position:relative;
+    height:3.2em;
+}
+
+.fas, .far{
+    position: absolute;
+    top:50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.date, .subtitle{
+    font-weight : bold;
 }
